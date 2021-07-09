@@ -9,8 +9,9 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=640 height=360></canvas>
       <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
@@ -19,6 +20,7 @@
         WebGL builds are not supported on mobile devices.
       </div>
       <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">V360_Restructure_01</div>
       </div>
@@ -60,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "640px";
+        canvas.style.height = "360px";
       }
       loadingBar.style.display = "block";
 
